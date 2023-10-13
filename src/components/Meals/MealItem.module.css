@@ -1,0 +1,28 @@
+.mealItem{
+    color: white;
+    padding: 1% 0;
+}
+.flex-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mealItem hr{
+    border: none;
+    border-bottom: 1px solid;
+    height: 2px;
+}
+.itemDetails{
+    margin-bottom: 10px;
+}
+.itemName{
+    margin-bottom: 3px;
+}
+.itemDescription{
+    margin-bottom: 8px;
+}
+.price{
+    font-size: 20px;
+    color: #0b1432;
+    font-weight: bolder;
+}
