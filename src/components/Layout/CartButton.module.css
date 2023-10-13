@@ -1,0 +1,41 @@
+.btn{
+    all: unset;
+    font-size: 1.1rem;
+    padding: 5px 7px;
+    width: 15%;
+    background-color: #0b1432;
+    border: 1px solid #0b1432;
+    color: #faefea;
+    cursor: pointer;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnCart{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: .5rem;
+}
+.btnLabel{
+    margin-right: .5rem;
+}
+.btnCounter{
+    padding: 2px 7px;
+    background-color: #b22626;
+    border-radius: 10px;
+}
+@media only screen and (max-width:425px){
+    .btn{
+        width:40%;
+        font-size: .7rem;
+    }
+    .btnCart{
+        margin-right: .2rem;
+    }
+    .btnLabel{
+        margin-right: .2rem;
+
+    }
+}
