@@ -1,7 +1,11 @@
+import { useState } from 'react';
 import styles from './CartButton.module.css'
-const CartButton = () => {
+const CartButton = (props) => {
+    const clickHandler = ()=>{
+        
+    }
     return (
-        <button className={styles.btn}>
+        <button className={styles.btn} onClick={props.onClickCartBtn}>
             <span className={styles.btnCart}>
                 <svg
                 xmlns='http://www.w3.org/2000/svg'

@@ -1,9 +1,9 @@
 import Modal from '../UI/Modal'
 import Card from '../UI/Card'
 import styles from './Cart.module.css'
-const Cart = ()=>{
+const Cart = (props)=>{
     return(
-        <Modal>
+        <Modal onHideCart={props.onHideCart}>
             <Card className={styles.overLay}>
             <p>Products</p>
             <div className={styles.amount}>
@@ -14,7 +14,7 @@ const Cart = ()=>{
                 </div>
             </div>
             <div className={styles.btnContainer}>
-                <button className={styles.cancelButton}>Cancel</button>
+                <button className={styles.cancelButton} onClick={props.onHideCart}>Cancel</button>
                 <button className={styles.orderButton}>Order</button>
             </div>
             </Card>
