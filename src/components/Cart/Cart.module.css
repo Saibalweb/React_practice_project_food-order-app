@@ -1,19 +1,4 @@
-.backDrop{
-    width: 100vw;
-    height: 100vh;
-    background-color: #000000aa;
-    position: fixed;
-    z-index: 100;
-}
-.overLayFlex{
-    width: 90vw;
-    height: 100vh;
-    position: absolute;
-    z-index: 110;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .overLay{
     width: 50%;
     height: 200px;
@@ -56,6 +41,8 @@
     font-size: 1.2rem;
     border-radius: 15px;
     cursor: pointer;
+    color: white;
+    background-color: green;
 }
 .cancelButton{
     padding: 5px 15px;
@@ -64,4 +51,6 @@
     font-size: 1.2rem;
     border-radius: 15px;
     cursor: pointer;
+    color: white;
+    background-color: red;
 }

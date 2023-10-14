@@ -1,11 +1,10 @@
+import Modal from '../UI/Modal'
 import Card from '../UI/Card'
 import styles from './Cart.module.css'
 const Cart = ()=>{
     return(
-        <>
-        <div className={styles.backDrop}></div>
-        <div className={styles.overLayFlex}>
-        <Card className={styles.overLay}>
+        <Modal>
+            <Card className={styles.overLay}>
             <p>Products</p>
             <div className={styles.amount}>
                 <h2>Chocolate</h2>
@@ -15,13 +14,12 @@ const Cart = ()=>{
                 </div>
             </div>
             <div className={styles.btnContainer}>
-                <button className={styles.orderButton}>Order</button>
                 <button className={styles.cancelButton}>Cancel</button>
+                <button className={styles.orderButton}>Order</button>
             </div>
-        </Card>
-        </div>
-        
-        </>
+            </Card>
+        </Modal>
+
     )
 }
 export default Cart;
