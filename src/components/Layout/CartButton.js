@@ -1,9 +1,8 @@
-import { useState } from 'react';
+import { useContext } from 'react';
+import CartContext from '../stores/cart-context';
 import styles from './CartButton.module.css'
 const CartButton = (props) => {
-    const clickHandler = ()=>{
-        
-    }
+    const carCtx = useContext(CartContext);
     return (
         <button className={styles.btn} onClick={props.onClickCartBtn}>
             <span className={styles.btnCart}>
@@ -16,7 +15,7 @@ const CartButton = (props) => {
                 </svg>
             </span>
             <span className={styles.btnLabel}> Your Cart</span>
-            <span className={styles.btnCounter}>5</span>
+            {carCtx.totalAmount!==0 &&<span className={styles.btnCounter}>{carCtx.items.length}</span>}
         </button>
     );
 }

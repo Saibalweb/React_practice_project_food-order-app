@@ -1,7 +1,6 @@
 
 .overLay{
     width: 50%;
-    height: 200px;
     background-color: white;
     color: black;
     padding: 2% 2%;
@@ -14,11 +13,28 @@
 .overLay p{
     margin-bottom: 5px;
 }
+.overLay hr{
+    border: none;
+    border-bottom:1px solid #8a2b06 ;
+}
 .amount{
     display: flex;
     justify-content: space-between ;
     margin-top: 14px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+.itemName{
+    margin-bottom: 5px;
+}
+.itemNameContainer p{
+    font-size: 15px;
+}
+.itemNameContainer span{
+    font-weight: bold;
+    padding: 1px 4px;
+    margin-left: 5px;
+    border: 1px solid;
+    border-radius: 2px;
 }
 .amountDetails{
     display: flex;
@@ -29,15 +45,24 @@
 }
 .amountDetailsBtn{
     padding: 5px 15px;
+    margin: 0 2px;
     font-size: 1rem;
     border: 1px solid #0b1432;
-    border-radius: 15px;
+    border-radius: 10px;
     cursor: pointer;
 
+}
+.totalAmount{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size:1.3rem;
 }
 .btnContainer{
     display: flex;
     justify-content: flex-end;
+    margin-top: 20px;
 }
 .orderButton{
     padding: 5px 15px;

@@ -21,7 +21,7 @@ const  App = ()=>  {
   }
     return (
       <CartProvider>
-      {showModal && <Cart onHideCart = {hideCartModal}/>}
+        {showModal && <Cart onHideCart = {hideCartModal}/>}
        <Header onShowCart = {showCartModal}></Header>
        <Meals/>
       </CartProvider>
