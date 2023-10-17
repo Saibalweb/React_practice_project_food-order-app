@@ -7,7 +7,6 @@ const MealItemForm = (props)=>{
         e.preventDefault();
         const enteredAmount = inputRef.current.value;
         const enteredAmountNum = +enteredAmount;
-        console.log(enteredAmountNum);
         if(enteredAmount.trim().length===0 || enteredAmountNum >20 || enteredAmountNum<0){
             return;
         }

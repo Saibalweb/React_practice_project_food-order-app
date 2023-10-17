@@ -11,7 +11,6 @@ const  App = ()=>  {
      changeShowModal(true);
   }
   const hideCartModal = ()=>{
-    console.log('hide');
     changeShowModal(false);
   }
   if(showModal){
